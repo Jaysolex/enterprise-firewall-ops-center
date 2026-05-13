@@ -96,6 +96,22 @@ curl -X POST http://localhost:5000/api/analyze \
 
 ## Project Structure
 
+enterprise-firewall-ops-center/
+├── backend/
+│   ├── policy_analyzer/
+│   │   ├── models.py
+│   │   ├── parser.py
+│   │   └── rule_optimizer.py
+│   ├── app.py
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   │   ├── Dashboard.jsx
+│   │   ├── Dashboard.css
+│   │   └── App.js
+│   └── package.json
+├── test_optimizer.py
+└── screenshots/
 
 ## Test Coverage
 
