@@ -1,0 +1,30 @@
+<firewall>
+    <rules>
+        <rule>
+            <name>Allow_HTTP</name>
+            <source>any</source>
+            <destination>web-server</destination>
+            <service>http</service>
+            <action>allow</action>
+            <description>Public web access</description>
+        </rule>
+
+        <rule>
+            <name>Allow_SSH</name>
+            <source>10.0.0.5</source>
+            <destination>linux-server</destination>
+            <service>ssh</service>
+            <action>allow</action>
+            <description>Admin SSH access</description>
+        </rule>
+
+        <rule>
+            <name>Block_Malware</name>
+            <source>any</source>
+            <destination>any</destination>
+            <service>any</service>
+            <action>deny</action>
+            <description>Deny known malware C2 ranges</description>
+        </rule>
+    </rules>
+</firewall>

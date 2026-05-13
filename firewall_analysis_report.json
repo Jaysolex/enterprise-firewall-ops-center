@@ -1,0 +1,57 @@
+{
+  "total_rules": 7,
+  "enabled_rules": 7,
+  "disabled_rules": 0,
+  "redundancies": [
+    {
+      "type": "IDENTICAL",
+      "rule1": "Allow_HTTPS_Public",
+      "rule2": "Allow_HTTPS_Public_Duplicate",
+      "reason": "Rules Allow_HTTPS_Public and Allow_HTTPS_Public_Duplicate have identical criteria",
+      "severity": "HIGH",
+      "recommendation": "Remove Allow_HTTPS_Public_Duplicate (keep Allow_HTTPS_Public)"
+    }
+  ],
+  "security_gaps": [],
+  "overly_permissive_rules": [],
+  "optimization_suggestions": [
+    {
+      "type": "CONSOLIDATE_RULES",
+      "source": "any",
+      "action": "allow",
+      "rules_to_consolidate": [
+        "Allow_HTTP_Public",
+        "Allow_HTTPS_Public",
+        "Allow_HTTPS_Public_Duplicate"
+      ],
+      "rule_count": 3,
+      "potential_destinations": [
+        "dmz-web",
+        "dmz-web",
+        "dmz-web"
+      ],
+      "potential_services": [
+        "http",
+        "https",
+        "https"
+      ],
+      "recommendation": "Consider consolidating 3 rules with source=any and action=allow"
+    }
+  ],
+  "compliance_findings": [
+    {
+      "framework": "NIST",
+      "control": "SC-7(5)",
+      "status": "COMPLIANT",
+      "finding": "Policy implements deny-by-default principle",
+      "rules_supporting": 1
+    },
+    {
+      "framework": "ISO 27001",
+      "control": "A.13.1.3",
+      "status": "COMPLIANT",
+      "finding": "Policy includes rules supporting network segregation",
+      "rules_supporting": 6
+    }
+  ]
+}
