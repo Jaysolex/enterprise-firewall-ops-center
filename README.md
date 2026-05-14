@@ -42,8 +42,6 @@ The platform provides real-time visualization of firewall policy analysis with a
 
 Users can upload configurations and track analysis progress in real-time:
 
-![File Upload Interface](screenshots/05_FILE_UPLOAD_SELECTED.png)
-
 Analysis results are presented with comprehensive findings and actionable recommendations:
 
 ![Analysis Results](screenshots/07_ANALYSIS_RESULTS_COMPLETE.png)
