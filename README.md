@@ -165,7 +165,9 @@ The analysis engine demonstrates enterprise-grade patterns:
 
 **Test Coverage:** 6 comprehensive test scenarios with 100% passing rate
 
-![Test Results](screenshots/12_COMPREHENSIVE_TEST_RESULTS.png)
+![Test Results](screenshots/12_COMPREHENSIVE_TEST_RESULTS_TOP.png)
+![Test Results](screenshots/12_COMPREHENSIVE_TEST_RESULTS_MIDDLE.png)
+![Test Results](screenshots/12_COMPREHENSIVE_TEST_RESULTS_BOTTOM.png)
 
 Run tests locally:
 ```bash
