@@ -549,7 +549,7 @@ Email: cybersolex@gmail.com
 
 For questions, issues, or feature requests:
 1. GitHub Issues - Report a bug
-2. Email - solomon.a.james97@gmail.com
+2. Email - cybersolex@gmail.com
 3. LinkedIn - Direct message
 
 Enterprise-Grade, Production-Ready, Full-Stack Application
